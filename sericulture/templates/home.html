@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sericulture Management - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: url('https://c1.wallpaperflare.com/preview/259/307/788/silkworm-silk-worm-cocoon.jpg') no-repeat center center/cover;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .feature-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Sericulture Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'add_farmer' %}">Add Farmer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'market_trends' %}">Market Trends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center py-5 d-flex align-items-center justify-content-center" style="height: 60vh;">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Empowering Sericulture Farmers</h1>
+            <p class="lead">Get insights, track market trends, and connect with government schemes.</p>
+            <a href="{% url 'market_trends' %}" class="btn btn-lg btn-warning shadow-lg">Get Started</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mt-5 text-center">
+        <h2 class="fw-bold">About Sericulture Management</h2>
+        <p class="lead">Our platform is dedicated to supporting sericulture farmers by providing real-time market insights, farmer management tools, and access to government schemes. We aim to bridge the gap between traditional farming practices and modern technology.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mt-5 text-center">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card feature-card p-4 shadow-lg border-0">
+                    <h4 class="fw-bold">Farmer Management</h4>
+                    <p>Register and manage sericulture farmers efficiently.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4 shadow-lg border-0">
+                    <h4 class="fw-bold">Market Insights</h4>
+                    <p>Track market prices and trends for silk production.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4 shadow-lg border-0">
+                    <h4 class="fw-bold">Government Schemes</h4>
+                    <p>Stay updated with the latest government initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information -->
+    <section class="container mt-5 text-center">
+        <h2 class="fw-bold">Why Choose Us?</h2>
+        <p>Our platform provides a user-friendly interface, real-time price updates, and a dedicated support system for farmers. We strive to enhance the productivity and profitability of sericulture farming.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2025 Sericulture Management | All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
